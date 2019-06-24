@@ -4,9 +4,13 @@ import { PageNotFoundComponent } from '../modules/page-not-found/page-not-found.
 import { UiComponent } from './ui/ui.component';
 
 const routes: Routes = [
- {path: '', component: UiComponent,
-    loadChildren :'../modules/auth/auth.module#AuthModule'
+  {
+    path: '',component: UiComponent,
+    loadChildren: '../modules/auth/auth.module#AuthModule'
   },
+  { path: '**', redirectTo: 'page-not-found' },
+  { path: 'page-not-found', component: PageNotFoundComponent },
+
   ];
 
 @NgModule({
