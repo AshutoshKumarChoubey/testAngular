@@ -42,9 +42,10 @@ import { CdkTreeModule } from '@angular/cdk/tree';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { PortalModule } from '@angular/cdk/portal';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
-  declarations: [HeaderComponent, UiComponent,PageNotFoundComponent],
+  declarations: [HeaderComponent, UiComponent,PageNotFoundComponent, NavComponent],
   imports: [
     CommonModule,
     UiRoutingModule,

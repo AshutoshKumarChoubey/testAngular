@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from '../modules/page-not-found/page-not-found.component';
-import { UiComponent } from './ui/ui.component';
+import { NavComponent } from './nav/nav.component';
 
 const routes: Routes = [
   {
-    path: '',component: UiComponent,
+    path: '',component: NavComponent,
     loadChildren: '../modules/auth/auth.module#AuthModule'
   },
   { path: '**', redirectTo: 'page-not-found' },
