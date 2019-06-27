@@ -15,8 +15,8 @@ export class SimpleaddComponent implements OnInit {
   	this.addmore = this._fb.group({
   	  title:[''],
   	  type:[''],
-  	  descripition:['']
-      // itemRows: this._fb.array([this.initItemRows()])
+  	  descripition:[''],
+      itemRows: this._fb.array([this.initItemRows()])
     });
   }
   get formArr() {
@@ -25,7 +25,10 @@ export class SimpleaddComponent implements OnInit {
 
   initItemRows() {
     return this._fb.group({
-    title:[''],
+    timeRange:[''],
+    learn:[''],
+    descripition:[''],
+    suggestion:[''],
     });
   }
   addNewRow() {
